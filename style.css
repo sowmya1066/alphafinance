@@ -28,11 +28,6 @@ body {
   padding: 0 6rem;
 }
 
-/* .logo-name {
-  margin-right: 30rem;
-  color: #5c5c5c;
-  font-size: 18px;
-} */
 .navigation.sticky {
   position: fixed;
   background-color: #d5def5;
@@ -331,15 +326,16 @@ h4 {
 .operations--tab {
   font-size: 18px;
   font-weight: 600;
-  /* color: gray; */
   background: none;
   border: none;
   padding: 18px;
   cursor: pointer;
+  color: #666 !important;
 }
 
 .section--tabs .operations--tab.active {
-  color: blueviolet;
+  color: blueviolet !important;
+  background-color: #d5def5;
 }
 .operations--tab--content {
   padding: 20px;
@@ -352,6 +348,11 @@ h4 {
 .operations--tab--content .operations1--tab {
   display: none;
   animation: moving 0.5s ease;
+}
+
+.operations--tab--content p {
+  font-size: 1.8rem !important;
+  background-color: #d5def5;
 }
 
 @keyframes moving {
@@ -405,7 +406,7 @@ h4 {
 }
 
 .testimonials--user {
-  background: #8594e4;
+  background: #8593e457;
   width: 520px;
   height: 270px;
   position: absolute;
@@ -414,6 +415,7 @@ h4 {
   transform: translateY(-50%);
   border-radius: 10px;
   color: #454545;
+  font-size: 1.6rem;
   padding: 45px;
   box-sizing: border-box;
   z-index: 2;
@@ -425,7 +427,7 @@ h4 {
 }
 
 .testimonials--user h3 {
-  margin: 35px 0 5px;
+  margin: 20px 0 5px;
   color: white;
 }
 
@@ -513,10 +515,6 @@ h4 {
 
 .section-4 {
   width: 800px;
-  /* background-color: burlywood; */
-  /* padding: 30px;
-  box-shadow: 0 2px 16px black;
-  /* border-radius: 20px; */
   margin-left: 25rem;
   position: absolute;
   top: 630%;
@@ -576,6 +574,26 @@ h4 {
 }
 
 /* SLIDER */
+.section6-description {
+  max-width: 80rem;
+  margin-left: 25rem;
+  margin-top: 10rem !important;
+  margin-bottom: -2rem;
+}
+
+.section6-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #8594e4;
+  margin-bottom: 1rem;
+}
+
+.section6-defination {
+  font-size: 4rem;
+  line-height: 1.3;
+  font-weight: 500;
+}
 
 .slider {
   max-width: 100rem;
@@ -583,8 +601,6 @@ h4 {
   margin: 0 auto;
   position: relative;
   top: -60%;
-
-  /* IN THE END */
   overflow: hidden;
 }
 
@@ -597,13 +613,10 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* THIS creates the animation! */
   transition: transform 1s;
 }
 
 .slide > img {
-  /* Only for images that have different size than slide */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -617,7 +630,7 @@ h4 {
   border: none;
   background: rgba(255, 255, 255, 0.7);
   font-family: inherit;
-  color: #333;
+  color: #8594e4;
   border-radius: 50%;
   height: 5.5rem;
   width: 5.5rem;
@@ -635,12 +648,17 @@ h4 {
   transform: translate(50%, -50%);
 }
 
+.slide i {
+  font-size: 5rem;
+  color: #8594e4;
+}
 .dots {
   position: absolute;
-  bottom: 5%;
-  left: 50%;
+  bottom: 4%;
+  left: 45%;
   transform: translateX(-50%);
   display: flex;
+  top: 77%;
 }
 
 .dots__dot {
@@ -653,9 +671,6 @@ h4 {
   margin-right: 1.75rem;
   cursor: pointer;
   transition: all 0.5s;
-
-  /* Only necessary when overlying images */
-  /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
 }
 
 .dots__dot:last-child {
@@ -663,8 +678,7 @@ h4 {
 }
 
 .dots__dot--active {
-  /* background-color: #fff; */
-  background-color: #888;
+  background-color: #8594e4;
   opacity: 1;
 }
 
@@ -674,18 +688,6 @@ h4 {
   position: relative;
 }
 
-.testimonial::before {
-  content: "\201C";
-  position: absolute;
-  top: -5.7rem;
-  left: -6.8rem;
-  line-height: 1;
-  font-size: 20rem;
-  font-family: inherit;
-  color: var(--color-primary);
-  z-index: -1;
-}
-
 .testimonial__header {
   font-size: 2.25rem;
   font-weight: 500;
@@ -693,7 +695,8 @@ h4 {
 }
 
 .testimonial__text {
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  font-weight: 500;
   margin-bottom: 3.5rem;
   color: #666;
 }
@@ -725,14 +728,14 @@ h4 {
 }
 
 .section__title--testimonials {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
   position: absolute;
   top: 750%;
-  padding: 10rem 3rem;
-  background-color: #8593e45e;
+  padding: 3rem 3rem;
+  background-color: #9ea7de;
   width: 100%;
 }
 
@@ -740,7 +743,7 @@ h4 {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .footer__item {
@@ -754,15 +757,15 @@ h4 {
 }
 
 .footer__logo {
-  height: 5rem;
+  height: 15rem;
   display: block;
   margin: 0 auto;
-  margin-bottom: 5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer__copyright {
   font-size: 1.4rem;
-  color: #aaa;
+  color: #454545;
   text-align: center;
 }
 
